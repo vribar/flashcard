@@ -12,9 +12,14 @@ In order to install flashcards, you should have [docker](https://docs.docker.com
 
 ## Installation
 
+Get code
+
+    git clone https://github.com/vribar/flashcard.git
+
 Create docker container with 
 
-    docker build github.com/vribar/flashcard
+    cd flashcard
+    docker build -t flashcard .
 
 Then run the container with
 
