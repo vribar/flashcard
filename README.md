@@ -12,26 +12,26 @@ In order to install flashcards, you should have [docker](https://docs.docker.com
 
 ## Installation
 
-Get code
+Get the code
 
     git clone https://github.com/vribar/flashcard.git
 
-Create docker container with 
+Install dependencies
 
     cd flashcard
-    docker build -t flashcard .
+    composer install
 
-Then run the container with
+Create docker container with 
 
-    docker-compose
+    docker build -t flashcard . 
 
-Then find the flashcard image with 
+Run the container with
 
-    docker ps
+    docker-compose up -d
 
-and run the app with 
+And run the app with 
 
-    docker exec -it <IMAGENAME> php artisan flashcard:interactive
+    docker exec -it flashcard_main_1 php artisan flashcard:interactive
 
 ## Contributors
 
